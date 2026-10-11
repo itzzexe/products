@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>كتالوج المنتجات المصرفية</title>
+<meta name="description" content="كتالوج المنتجات والمبادرات المصرفية الإسلامية لاختيار الإدارة تمهيداً لإعداد دراسات الجدوى">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#catalog">انتقل إلى الكتالوج</a>
+
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <div class="brand">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><use href="#rosette-small"/></svg>
+      <div>
+        <strong>كتالوج المنتجات المصرفية</strong>
+        <span>وثيقة اختيار — للإدارة العليا</span>
+      </div>
+    </div>
+    <nav class="topnav" aria-label="أقسام الصفحة">
+      <a href="#initiatives">المبادرات</a>
+      <a href="#catalog">المنتجات</a>
+      <button type="button" class="topnav__file" data-open-file>ملف القرار <b data-count>0</b></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <canvas class="hero__guilloche" aria-hidden="true"></canvas>
+    <div class="wrap hero__inner">
+      <p class="eyebrow">مذكرة عرض على مجلس الإدارة</p>
+      <h1>
+        <span class="hero__num" data-num="150">١٥٠</span> منتجاً
+        و<span class="hero__num" data-num="17">١٧</span> مبادرة.
+        <em>اختاروا ما يستحق دراسة جدوى.</em>
+      </h1>
+      <p class="lede">
+        أمامكم المحفظة الكاملة المقترحة، وكلها متوافقة مع أحكام الشريعة: ودائع واستثمار، تمويل للأفراد والشركات،
+        بطاقات وخدمات رقمية، وتكافل. أشّروا على المنتجات التي تخدم استراتيجية المصرف، وحدّدوا أولويتها.
+        ستُعدّ دراسة جدوى كاملة لكل منتج يقع عليه الاختيار.
+      </p>
+
+      <ol class="steps" aria-label="طريقة الاستخدام">
+        <li><b>تصفّحوا</b> المبادرات والمنتجات، واستخدموا البحث والفلاتر.</li>
+        <li><b>أشّروا</b> على ما يناسبكم بزر «اختيار»، وحددوا الأولوية مع أي ملاحظة.</li>
+        <li><b>صدّروا</b> ملف القرار، Excel أو مذكرة مطبوعة، ليُعتمد أساساً لدراسات الجدوى.</li>
+      </ol>
+
+      <dl class="ledger" aria-label="مكونات المحفظة">
+        <div><dt>الودائع والاستثمار</dt><dd data-sec-count="منتجات الودائع الإسلامية">٥٠</dd></div>
+        <div><dt>الائتمان والتمويل</dt><dd data-sec-count="منتجات الائتمان الإسلامي">٥٠</dd></div>
+        <div><dt>الحسابات والبطاقات والخدمات</dt><dd data-sec-count="المنتجات المتنوعة">٥٠</dd></div>
+        <div><dt>مبادرات استراتيجية</dt><dd>١٧</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- INITIATIVES -->
+  <section id="initiatives" class="block">
+    <div class="wrap">
+      <header class="block__head">
+        <div>
+          <p class="eyebrow">الجزء الأول</p>
+          <h2>المبادرات الاستراتيجية</h2>
+        </div>
+        <p class="block__note">برامج ومنظومات متكاملة تتجاوز المنتج الواحد. تجمع عدة منتجات أو قنوات أو شرائح عملاء تحت هدف واحد.</p>
+      </header>
+      <div class="chips" role="group" aria-label="تصنيف المبادرات" data-ini-filter></div>
+      <div class="initiatives" data-initiatives></div>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section id="catalog" class="block block--catalog">
+    <div class="wrap">
+      <header class="block__head">
+        <div>
+          <p class="eyebrow">الجزء الثاني</p>
+          <h2>كتالوج المنتجات</h2>
+        </div>
+        <p class="block__note">لكل منتج رقمه التسلسلي، وصيغته الشرعية، والفئة التي يستهدفها. الرقم يبقى ثابتاً في ملف القرار وفي دراسات الجدوى اللاحقة.</p>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="أقسام المنتجات" data-sections></div>
+
+      <div class="toolbar">
+        <label class="search">
+          <span class="sr">ابحث في المنتجات</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input type="search" placeholder="ابحث باسم المنتج أو الفئة المستهدفة أو الصيغة…" data-search>
+        </label>
+        <label class="select">
+          <span>الصيغة الشرعية</span>
+          <select data-sharia><option value="">كل الصيغ</option></select>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" data-only-selected>
+          <span>المختار فقط</span>
+        </label>
+      </div>
+
+      <div class="chips chips--cats" role="group" aria-label="الفئات" data-cats></div>
+
+      <p class="result-line" aria-live="polite" data-result-line></p>
+      <div class="products" data-products></div>
+      <div class="empty" data-empty hidden>
+        <p>لا توجد منتجات تطابق هذا البحث.</p>
+        <button type="button" class="btn btn--ghost" data-reset>مسح البحث والفلاتر</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>المصدر: ملف «المنتجات والمبادرات» المرفق (١٥٠ منتجاً، ١٧ مبادرة). تُحفظ اختياراتكم في هذا المتصفح فقط، ولا تُرسل إلى أي جهة.</p>
+  </div>
+</footer>
+
+<!-- DECISION TRAY -->
+<div class="tray" data-tray>
+  <div class="wrap tray__row">
+    <p class="tray__summary"><b data-count>0</b> <span data-count-label>عنصر في ملف القرار</span></p>
+    <div class="tray__bar" aria-hidden="true"><i data-bar></i></div>
+    <button type="button" class="btn btn--ink" data-open-file>فتح ملف القرار</button>
+  </div>
+</div>
+
+<!-- DECISION FILE DRAWER -->
+<div class="drawer" data-drawer hidden>
+  <div class="drawer__scrim" data-close-file></div>
+  <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="file-title">
+    <header class="drawer__head">
+      <div>
+        <p class="eyebrow">ملف القرار</p>
+        <h2 id="file-title">المنتجات المرشحة لدراسة الجدوى</h2>
+      </div>
+      <button type="button" class="icon-btn" data-close-file aria-label="إغلاق">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+    <div class="drawer__meta">
+      <label>الجهة المقرِّرة
+        <input type="text" data-meta="committee" placeholder="مثال: لجنة تطوير المنتجات">
+      </label>
+      <label>تاريخ الجلسة
+        <input type="date" data-meta="date">
+      </label>
+    </div>
+    <div class="drawer__body" data-file-list></div>
+    <footer class="drawer__foot">
+      <button type="button" class="btn btn--ink" data-export-csv>تنزيل ملف Excel</button>
+      <button type="button" class="btn btn--ghost" data-print>طباعة مذكرة القرار</button>
+      <button type="button" class="btn btn--ghost" data-copy>نسخ القائمة</button>
+      <button type="button" class="btn btn--text" data-clear>إفراغ الملف</button>
+    </footer>
+  </aside>
+</div>
+
+<!-- PRINT MEMO -->
+<section class="memo" data-memo aria-hidden="true"></section>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="rosette-small" viewBox="0 0 40 40">
+      <g fill="none" stroke="currentColor" stroke-width=".7">
+        <circle cx="20" cy="20" r="18"/>
+        <path d="M20 4c6 8 6 24 0 32M20 4c-6 8-6 24 0 32M4 20c8-6 24-6 32 0M4 20c8 6 24 6 32 0"/>
+        <path d="M8.7 8.7c9.9 2.8 19.8 12.7 22.6 22.6M31.3 8.7c-2.8 9.9-12.7 19.8-22.6 22.6"/>
+        <circle cx="20" cy="20" r="5"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
